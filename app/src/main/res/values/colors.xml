@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="status">#F2B705</color>
+    <color name="darkyellow">#F29F05</color>
+    <color name="pembe">#F26D6D</color>
+    <color name="kırmızı">#F24405</color>
+    <color name="yesil">#558C03</color>
+    <color name="doubleyellow">#F28705</color>
+    <color name="gri">#F3D68A</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fako.retroo.uı.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/mainToBasket"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_approveFragment"
+            app:destination="@id/approveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.fako.retroo.uı.fragment.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/basketToApprove"
+            app:destination="@id/approveFragment" />
+        <argument
+            android:name="food"
+            app:argType="com.fako.retroo.entity.Food" />
+    </fragment>
+    <fragment
+        android:id="@+id/approveFragment"
+        android:name="com.fako.retroo.uı.fragment.ApproveFragment"
+        android:label="fragment_approve"
+        tools:layout="@layout/fragment_approve" >
+        <argument
+            android:name="basketFood"
+            app:argType="com.fako.retroo.entity.BasketFood" />
+    </fragment>
+</navigation>
